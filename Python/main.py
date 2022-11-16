@@ -1,18 +1,13 @@
-from Funciones.CalculadoraDeImpuestos import main as CalculadoraImpuestos
-from Funciones.Grados import main as Grados
-from Funciones.Monedas import main as CalculadoraMonedas
-from Funciones.SumarMultiplicar import main as SumarMultiplicar
-from Funciones.Contraseña import main as Contraseñas
-from Funciones.adivinaElNumero import main as AdivinaElNumero
+from modulos import *
 
 iniciofin = '='*30
 menuInicio = f"""{iniciofin}\n{'-'*12} MENU {'-'*12}
-1-Ejercicio I
-2-Ejercicio II
-3-Ejercicio III 
-4-Ejercicio IV
-5-Ejercicio V
-6-Ejercicio VI
+1-Calculadora de Impuestos
+2-Convertidor de Grados
+3-Convertidor de Monedas
+4-Sumar-Multiplicar Listas
+5-Generador de Contraseñas
+6-Adivina El Numero
 =>"""
 
 def ejercicios(menu):

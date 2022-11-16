@@ -1,7 +1,7 @@
 import random
 
-letrasMayu = ['A','D','G','D','S','E','G','H','D','E','R']
-letrasMin = ['q','w','e','r','g','s','d','f','g','s','z','c']
+letrasMayu = ['J','A','V','I','E','R','A','D','G','D','S','E','G','H','D','E','R']
+letrasMin = ['j','a','v','i','e','r','q','w','e','r','g','s','d','f','g','s','z','c']
 numeros = ['1','2','3','4','5','6','7','8','9','0']
 simbolos = ['°','#','$','%','&','','=']
 contras = []
