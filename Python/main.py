@@ -1,7 +1,12 @@
 from modulos import *
 
 iniciofin = '='*30
-menuInicio = f"""{iniciofin}\n{'-'*12} MENU {'-'*12}
+
+menuInicio = '''1-Funciones
+2-POO
+=>'''
+
+menuFunciones = f"""{iniciofin}\n{'-'*7} MENU FUNCIONES {'-'*7}
 1-Calculadora de Impuestos
 2-Convertidor de Grados
 3-Convertidor de Monedas
@@ -10,8 +15,11 @@ menuInicio = f"""{iniciofin}\n{'-'*12} MENU {'-'*12}
 6-Adivina El Numero
 =>"""
 
-def ejercicios(menu):
-        global x
+menuPoo = f"""{iniciofin}\n{'-'*10} MENU POO {'-'*10}
+1-Figuras Geometricas
+=>""" 
+
+def funciones(menu):
         if menu == '1':
             print(iniciofin,'\n')
             CalculadoraImpuestos()
@@ -37,17 +45,29 @@ def ejercicios(menu):
             print(iniciofin,'\n') 
             AdivinaElNumero()
         else:
-            print(iniciofin)  
-            return False
-        return True
+            print(iniciofin,'\n')      
+            return
+
+def poo(menu):
+    if menu == '1':
+        FigurasGeometricas()
 
 def main():
-    x = True
     while True:
-        if x:
-            menu = input(menuInicio)
-            x = ejercicios(menu)
+        print(iniciofin)
+        print('~'*5,'Ejercicios Python','~'*6)
+        menu = input(menuInicio)
+        print('~'*30)
+        if menu == '1':
+            print(iniciofin,'\n')
+            opcion = input(menuFunciones)
+            funciones(opcion)
+        elif menu == '2':
+            print(iniciofin,'\n')
+            opcion = input(menuPoo)
+            poo(opcion)
         else:
+            print(iniciofin)
             break
 
 if __name__ == '__main__':    
