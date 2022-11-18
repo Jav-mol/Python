@@ -20,41 +20,42 @@ menuPoo = f"""{iniciofin}\n{'-'*10} MENU POO {'-'*10}
 =>""" 
 
 def funciones(menu):
-        if menu == '1':
-            print(iniciofin,'\n')
-            CalculadoraImpuestos()
-        elif menu == '2':      
-            print(iniciofin,'\n')
-            print(iniciofin) 
-            Grados()
-            print(iniciofin,'\n')               
-        elif menu == '3':
-            print()
-            print(iniciofin) 
-            CalculadoraMonedas()
-        elif menu == '4':
-            print(iniciofin,'\n')
-            print(iniciofin) 
-            SumarMultiplicar()
-            print(iniciofin,'\n')
-        elif menu == '5':
-            print(iniciofin,'\n')
-            Contraseñas()
-            print()
-        elif menu == '6':
-            print(iniciofin,'\n') 
-            AdivinaElNumero()
-        else:
-            print(iniciofin,'\n')      
-            return
-
+    if menu == '1':
+        print(iniciofin,'\n')
+        CalculadoraImpuestos()
+    elif menu == '2':      
+        print(iniciofin,'\n')
+        print(iniciofin) 
+        Grados()
+        print(iniciofin,'\n')               
+    elif menu == '3':
+        print()
+        print(iniciofin) 
+        CalculadoraMonedas()
+    elif menu == '4':
+        print(iniciofin,'\n')
+        print(iniciofin) 
+        SumarMultiplicar()
+        print(iniciofin,'\n')
+    elif menu == '5':
+        print(iniciofin,'\n')
+        Contraseñas()
+        print()
+    elif menu == '6':
+        print(iniciofin,'\n') 
+        AdivinaElNumero()
+    else:
+        print(iniciofin,'\n')      
+        return True
+    return False
+    
 def poo(menu):
     if menu == '1':
         FigurasGeometricas()
     else:
         print(iniciofin,'\n')      
-        return
-
+        return True
+    
 
 def main():
     while True:
@@ -63,13 +64,18 @@ def main():
         menu = input(menuInicio)
         print('~'*30)
         if menu == '1':
-            print(iniciofin,'\n')
-            opcion = input(menuFunciones)
-            funciones(opcion)
+            while True:
+                opcion = input(menuFunciones)
+                x = funciones(opcion)
+                if x:
+                    break
         elif menu == '2':
-            print(iniciofin,'\n')
-            opcion = input(menuPoo)
-            poo(opcion)
+            while True:
+                print(iniciofin,'\n')
+                opcion = input(menuPoo)
+                x = poo(opcion)
+                if x:
+                    break
         else:
             print(iniciofin)
             break

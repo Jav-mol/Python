@@ -6,7 +6,7 @@ def calculadora():
     print('~'*42,'\n')
     
 def main():
-    print('~'*7,'Calculadora De Impuestos;','~'*7)
+    print('~'*7,'Calculadora De Impuestos;','~'*8)
     calculadora()
 
 if __name__ == '__main__':
