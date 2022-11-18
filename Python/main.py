@@ -51,6 +51,10 @@ def funciones(menu):
 def poo(menu):
     if menu == '1':
         FigurasGeometricas()
+    else:
+        print(iniciofin,'\n')      
+        return
+
 
 def main():
     while True:
