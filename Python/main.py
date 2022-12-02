@@ -4,6 +4,7 @@ iniciofin = '='*30
 
 menuInicio = '''1-Funciones
 2-POO
+3-Archivos
 =>'''
 
 menuFunciones = f"""{iniciofin}\n{'-'*7} MENU FUNCIONES {'-'*7}
@@ -17,6 +18,10 @@ menuFunciones = f"""{iniciofin}\n{'-'*7} MENU FUNCIONES {'-'*7}
 
 menuPoo = f"""{iniciofin}\n{'-'*10} MENU POO {'-'*10}
 1-Figuras Geometricas
+=>""" 
+
+menuArchivos = f"""{iniciofin}\n{'-'*10} MENU ARCHIVOS {'-'*10}
+1-Registros de tienda
 =>""" 
 
 def funciones(menu):
@@ -56,6 +61,13 @@ def poo(menu):
         print(iniciofin,'\n')      
         return True
     
+def archivos(menu):
+    if menu == '1':
+        RegistrosTienda()
+    else:
+        print(iniciofin,'\n')      
+        return True
+    
 
 def main():
     while True:
@@ -76,6 +88,12 @@ def main():
                 x = poo(opcion)
                 if x:
                     break
+        elif menu == '3':
+            print(iniciofin,'\n')
+            opcion = input(menuArchivos)
+            x = archivos(opcion)
+            if x:
+                break
         else:
             print(iniciofin)
             break
