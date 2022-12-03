@@ -1,0 +1,4 @@
+Id Venta: 1 
+Fecha: 2-Dic 
+Monto: 150
+ 
