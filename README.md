@@ -1,4 +1,4 @@
-# Python
-Learning python
-My first programs
-From the python course
+# Python Projects 💻
+Learning python 🐍
+
+My first programs, run the main.py file to start
