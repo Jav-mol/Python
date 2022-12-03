@@ -24,8 +24,12 @@ def main():
                 Registro.montoCero()
             Registro.monto_total()
         elif opcion == '3':
-            print(' Mostrar Registros '.center(30,'-'))
-            Registro.mostar_registro()
+            try:
+                print(' Mostrar Registros '.center(30,'-'))
+                Registro.mostar_registro()
+            except:
+                print(' Error '.center(30,'-'))
+                print('Aun no se a agredo ningun registro')
         elif opcion == '4':
             print(' Eliminando Registros '.center(30,'-'))
             Registro.eliminar()
