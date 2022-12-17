@@ -22,6 +22,7 @@ menuPoo = f"""{iniciofin}\n{'-'*10} MENU POO {'-'*10}
 
 menuArchivos = f"""{iniciofin}\n{'-'*10} MENU ARCHIVOS {'-'*10}
 1-Registros de tienda
+2-Registros de Trading
 =>""" 
 
 def funciones(menu):
@@ -64,11 +65,12 @@ def poo(menu):
 def archivos(menu):
     if menu == '1':
         RegistrosTienda()
+    elif menu == '2':
+        RegistrosTrading()
     else:
         print(iniciofin,'\n')      
         return True
     
-
 def main():
     while True:
         print(iniciofin)
@@ -89,11 +91,12 @@ def main():
                 if x:
                     break
         elif menu == '3':
-            print(iniciofin,'\n')
-            opcion = input(menuArchivos)
-            x = archivos(opcion)
-            if x:
-                break
+            while True:
+                #print(iniciofin,'\n')
+                opcion = input(menuArchivos)
+                x = archivos(opcion)
+                if x:
+                    break
         else:
             print(iniciofin)
             break

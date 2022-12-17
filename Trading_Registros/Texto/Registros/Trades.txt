@@ -1,0 +1,79 @@
+Trade_id: 1 
+En: DXYUSD
+Tipo: Long
+Margen: $30.0 
+Tarifa: $-0.02 
+Ganan/Perd: $-0.17
+Apalancamiento: X3 
+Fecha de apertura: 08-Nov 
+Fecha de cierre: 08-Nov
+
+Trade_id: 2
+En: EURUSD
+Tipo: Short 
+Margen: $20.0 
+Tarifa: $-0.02 
+Ganan/Perd: $-0.45 
+Apalancamiento: X3 
+Fecha de apertura: 08-Nov 
+Fecha de cierre: 10-Nov
+
+Trade_id: 3 
+En: EURUSD 
+Tipo: Short
+Margen: $20.0 
+Tarifa: $-0.1 
+Ganan/Perd: $-1.73 
+Apalancamiento: X3 
+Fecha de apertura: 10-Nov 
+Fecha de cierre: 28-Nov
+
+Trade_id: 4 
+En: EURUSD 
+Tipo: Short 
+Margen: $10.0 
+Tarifa: $-0.08 
+Ganan/Perd: $-0.71 
+Apalancamiento: X4 
+Fecha de apertura: 15-Nov 
+Fecha de cierre: 02-Dic
+
+Trade_id: 5 
+En: US500 
+Tipo: Short 
+Margen: $10.0 
+Tarifa: $-0.09 
+Ganan/Perd: $0.69 
+Apalancamiento: X4 
+Fecha de apertura: Nov-15 
+Fecha de cierre: Dic-07
+
+Trade_id: 6 
+En: GBPUSD 
+Tipo: Short 
+Margen: $10.0 
+Tarifa: $-0.02 
+Ganan/Perd: $-0.09 
+Apalancamiento: X5 
+Fecha de apertura: Dic-09 
+Fecha de cierre: Dic-12
+
+Trade_id: 8 
+En: US500 
+Tipo: Short 
+Margen: $20.0 
+Tarifa: $-0.2 
+Ganan/Perd: $-0.04 
+Apalancamiento: X3 
+Fecha de apertura: Nov-10 
+Fecha de cierre: Dic-15
+
+Trade_id: 9
+En: US500 
+Tipo: Short 
+Margen: $15.0 
+Tarifa: $-0.06 
+Ganan/Perd: $0.75 
+Apalancamiento: X4 
+Fecha de apertura: Dic-09 
+Fecha de cierre: Dic-15

@@ -9,3 +9,5 @@ from Funciones.AdivinaElNumero import main as AdivinaElNumero
 from POO.FigurasGeometricas.main import main as FigurasGeometricas
 #Modulo Archivos
 from Manejo_Archivos.Registros_Tienda.main import main as RegistrosTienda
+#Modulo Trading
+from Manejo_Archivos.Registros_Trading.main import main as RegistrosTrading
